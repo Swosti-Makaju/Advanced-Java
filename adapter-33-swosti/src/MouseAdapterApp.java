@@ -1,3 +1,7 @@
+/*
+ * Write a GUI program using components to find sum and difference of two numbers.Use two text fields for giving input and a label for output. The program should display sum if user presses mouse and difference if user release mouse using adapter class.
+ */
+
 import java.awt.*;
 import java.awt.event.*;
 

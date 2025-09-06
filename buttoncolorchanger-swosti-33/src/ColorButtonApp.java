@@ -1,3 +1,7 @@
+/*
+ * Design a form with three buttons with captions “RED,” “BLUE,” and “GREEN,” respectively. Then write a program to handle the event such that when the user clicks the button, the color of that button will be the same as its caption.
+ */
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

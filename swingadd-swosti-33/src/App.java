@@ -1,3 +1,8 @@
+/*
+ * Write a Program using swing components to add two digit. Use text fields for inputs and output. 
+ * Your program should display the result when the user presses a button.
+ */
+
 import javax.swing.*;
 import java.awt.event.*;
 
