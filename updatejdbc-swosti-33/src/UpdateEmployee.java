@@ -1,3 +1,5 @@
+//17.Write a Java program using JDBC to connect to a MySQL database and retrieve an employee record from the emp table based on a given ID using a prepared statement. The program should use an updatable ResultSet to modify the employee’s name and update the record in the database.
+
 import java.sql.*;
 import java.util.Scanner;
 
@@ -16,22 +18,21 @@ public class UpdateEmployee {
         Connection con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/swastik?useSSL=false",
                 "root",
-                ""
-        );
+                "");
 
         // 2. Create PreparedStatement with scrollable, updatable ResultSet
         PreparedStatement ps = con.prepareStatement(
                 "SELECT * FROM emp WHERE id = ?",
                 ResultSet.TYPE_SCROLL_INSENSITIVE,
-                ResultSet.CONCUR_UPDATABLE
-        );
+                ResultSet.CONCUR_UPDATABLE);
 
         ps.setInt(1, empId);
         ResultSet rs = ps.executeQuery();
 
         if (rs.next()) {
-            System.out.println("Current Employee: " + rs.getInt("id") + "\t" + rs.getString("name") + "\t" + rs.getString("department"));
-            
+            System.out.println("Current Employee: " + rs.getInt("id") + "\t" + rs.getString("name") + "\t"
+                    + rs.getString("department"));
+
             // Update name
             rs.updateString("name", newName);
             rs.updateRow();
