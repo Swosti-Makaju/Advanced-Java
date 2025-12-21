@@ -86,4 +86,3 @@ public class ShapeDrawer extends JFrame implements ActionListener {
         SwingUtilities.invokeLater(ShapeDrawer::new);
     }
 }
-    
