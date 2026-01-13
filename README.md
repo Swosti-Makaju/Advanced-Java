@@ -10,3 +10,4 @@ It is meant for learning purposes and to keep track of lab lab excercises done i
 🛠 Technologies Used
 - **Java (JDK 8/11/17)** – Programming language
 - Vs code
+- Apache NetBeans IDE
