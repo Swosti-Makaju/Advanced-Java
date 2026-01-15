@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>SaveUser</servlet-name>
+        <servlet-class>SaveUser</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SaveUser</servlet-name>
+        <url-pattern>/SaveUser</url-pattern>
+    </servlet-mapping>
+</web-app>
